@@ -1,0 +1,22 @@
+buildscript {
+    repositories { mavenCentral() }
+}
+
+apply plugin: 'java'
+apply plugin: 'scala'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+dependencies {
+    compile group: 'org.apache.predictionio', name: 'apache-predictionio-core_2.10', version: '0.11.0-incubating'
+    compile group: 'org.apache.spark', name: 'spark-core_2.10', version: '1.3.0'
+    compile group: 'org.apache.spark', name: 'spark-mllib_2.10', version: '1.3.0'
+    compile group: 'org.scalatest', name: 'scalatest', version: '2.2.1'
+
+}
